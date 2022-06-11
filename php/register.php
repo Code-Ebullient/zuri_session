@@ -1,8 +1,8 @@
 <?php
 if(isset($_POST['submit'])){
-    $username = "Username:".$_POST['fullname']."";
-    $email = "Email:".$_POST['email']."";
-    $password = "Password:".$_POST['password']."";
+    $username = "Username:".$_POST['fullname'].""; // Defining the username variable
+    $email = "Email:".$_POST['email'].""; // Defining the email variable
+    $password = "Password:".$_POST['password'].""; // Defining the password variable
     // $username = $_POST['fullname'];
     // $email = $_POST['email'];
     // $password = $_POST['password'];
@@ -27,21 +27,7 @@ function registerUser($username, $email, $password){
             echo "Sorry the name: $username and email: $email already exist.";
         }
     }
-        // if(!nameexist($username, $email, $password)) {
-        //     echo "Already Exist";
-        // } else {
-        //     $d_file = fopen('storage/users.csv', 'w+');
-        //     fwrite($d_file, $username. ":" . $email. "," . $password. "\n");
-        //     fclose($d_file);
-        //     echo "User Successfully registered";
-        // } else {
-        //     echo "Please Register";
-        // }
 }
-
-    // echo "OKAY";
-
-
 
 ?>
 
